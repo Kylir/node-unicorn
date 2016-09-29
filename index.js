@@ -29,7 +29,6 @@ strip.render([
     RED, GREEN, BLUE, WHITE,
     RED, GREEN, BLUE, WHITE    
 ]);
-strip.show();
 
 setTimeout(function () {
     strip.reset();

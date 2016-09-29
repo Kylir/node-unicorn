@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Kylir/node-unicorn/issues"
   },
-  "homepage": "https://github.com/Kylir/node-unicorn#readme"
+  "homepage": "https://github.com/Kylir/node-unicorn#readme",
+  "dependencies": {
+    "rpi-ws281x-native": "^0.8.1"
+  }
 }
