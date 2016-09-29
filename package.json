@@ -1,0 +1,26 @@
+{
+  "name": "node-unicorn",
+  "version": "0.0.1",
+  "description": "Drive a Unicorn pHat in NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kylir/node-unicorn.git"
+  },
+  "keywords": [
+    "pi",
+    "zero",
+    "unicorn",
+    "phat",
+    "pimoroni"
+  ],
+  "author": "Jason Forest",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kylir/node-unicorn/issues"
+  },
+  "homepage": "https://github.com/Kylir/node-unicorn#readme"
+}
