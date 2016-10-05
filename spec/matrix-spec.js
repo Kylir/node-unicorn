@@ -180,7 +180,24 @@ describe('The matrix module', function() {
     });
 
 
+    it('should skip incorrect moves like [L1, Z3, R2, U3, W8, D4] ', function () {
+        var initialState = [
+            [0,0,0,0,1,0,0,0],
+            [1,2,3,4,5,6,7,8],
+            [0,0,0,0,2,0,0,0],
+            [0,0,0,0,3,0,0,0]
+        ];
 
+        var correctFinalState = [
+            [0,0,0,5,3,0,0,0],
+            [2,3,4,0,1,7,8,1],
+            [0,0,0,0,6,2,0,0],
+            [0,0,0,0,0,0,0,0]
+        ];
+
+        var newState = matrix.applyMoves([['L',1], ['Z',3], ['R',2], ['U',3], ['W',8], ['D',4]], initialState);
+        expect(newState).toEqual(correctFinalState);
+    });
 
 
 });
