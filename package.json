@@ -4,7 +4,7 @@
   "description": "Drive a Unicorn pHat in NodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -18,12 +18,15 @@
     "pimoroni"
   ],
   "author": "Jason Forest",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Kylir/node-unicorn/issues"
   },
   "homepage": "https://github.com/Kylir/node-unicorn#readme",
   "dependencies": {
     "rpi-ws281x-native": "^0.8.1"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.2"
   }
 }

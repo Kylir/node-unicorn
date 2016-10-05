@@ -1,4 +1,5 @@
-/* jshint undef: true, node: true, eqeqeq: true, esnext: true */
+/* jshint undef: true, node: true, esnext: true, eqeqeq: true */
+'use strict';
 
 var NUMBER_OF_LEDS = 32;
 var strip = require('rpi-ws281x-native');
