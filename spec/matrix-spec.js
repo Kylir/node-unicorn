@@ -3,7 +3,7 @@
 
 'use strict';
 
-var matrix = require('../lib/matrix');
+var matrix = require('../lib/matrix-operations');
 
 describe('The matrix module', function() {
 
