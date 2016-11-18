@@ -3,7 +3,7 @@
 
 'use strict';
 
-var matrix = require('../lib/matrix-operations');
+var matrix = require('../lib/rubicorn/matrix-operations');
 
 describe('The matrix module', function() {
 

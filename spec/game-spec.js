@@ -3,18 +3,16 @@
 
 'use strict';
 
-var game = require('../lib/game');
+var game = require('../lib/rubicorn/game');
 
 describe('The game module', function() {
 
     // We want to generate a random grid using 
 
-    describe('', function () {
+    describe('The color matrix', function () {
 
-        it('should do stuff', function() {
-            var original = 1;
-            var newThing = game.doStuff();
-            expect(newThing).toEqual(original);
+        it('should have some red stuff', function() {
+            expect(game.colors.R).toEqual(0xff0000);
         });
     });
 });

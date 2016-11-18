@@ -7,7 +7,7 @@
  */
 
 const request = require('request');
-const LED_SERVER_URL = 'http://localhost:3000';
+const LED_SERVER_DEFAULT_URL = 'http://localhost:3000';
 const NUMBER_OF_LEDS = 32;
 
 let leds = [
@@ -18,7 +18,7 @@ let leds = [
 ];
 
 request
-    .get(LED_SERVER_URL + '/clear')
+    .get(LED_SERVER_DEFAULT_URL + '/clear')
     .on('response', res => { console.log('Clear: ' + res.statusCode); });
 
 // Loop every 0.1 sec: 
@@ -31,14 +31,12 @@ let interval = setInterval(() => {
 
     // Contact the server and pass the array of LEDs
     request
-        .post({url: LED_SERVER_URL + '/display', body: {leds: leds}, json: true })
+        .post({url: LED_SERVER_DEFAULT_URL + '/display', body: {leds: leds}, json: true })
         .on('response', res => { console.log('Response status: ' + res.statusCode); });
 }, 100);
 
 // After 10 secondes, stop.
 setTimeout(() => {
     console.log('Stop!');
-    //stop the server and don't care about the response
-    request.get(LED_SERVER_URL + '/stop', (req, res) => {});
     clearInterval(interval);
 }, 10000);
