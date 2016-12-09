@@ -4,7 +4,10 @@
   "description": "Drive a Unicorn pHat in NodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "server": "node ./lib/server/led-server.js &",
+    "color": "node ./lib/colors/index.js &",
+    "game": "node ./lib/rubicorn/index.js &"
   },
   "repository": {
     "type": "git",
