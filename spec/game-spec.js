@@ -42,7 +42,7 @@ describe('In the game module', function() {
         it('should not accept two different matrices.', function () {
             let m1 = [[1,2,3,4,1,2,3,4],[1,2,3,4,1,2,3,4],[1,2,3,4,1,2,3,4],[1,2,3,4,1,2,3,4]];
             let m2 = [[1,2,3,4,1,2,3,4],[0,2,3,4,1,2,3,4],[1,2,3,4,1,2,3,4],[1,2,3,4,1,2,3,4]];
-            //        difference here -> X
+            // ------ difference here -> X
             expect(game.areIdentical(m1, m2)).toEqual(false);
         });
     });
