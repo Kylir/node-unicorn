@@ -47,5 +47,11 @@ describe('In the game module', function() {
         });
     });
     
+    describe('The init() function should return a valid starting grid', function () {
+        it('should do stuff', function () {
+            //game.init();
+            expect(true).toEqual(true);
+        });
+    });
 
 });
